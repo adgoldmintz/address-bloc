@@ -12,5 +12,8 @@ describe("MenuController", () => {
             this.menu.contacts.push("Bob");
             expect(this.menu.getContactCount()).toBe(1);
         });
+        it("should return a string containing the text 'Learning is a life-long pursuit'", () => {
+            expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit");
+        });
     });
 });
