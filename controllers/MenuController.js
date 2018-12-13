@@ -10,6 +10,7 @@ module.exports = class MenuController {
                 message: "Please choose from an option below: ",
                 choices: [
                     "Add new contact",
+                    "View all contacts",
                     "Exit"
                 ]
             }
@@ -56,6 +57,10 @@ module.exports = class MenuController {
 
     getContactCount() {
        return this.contacts.length;
+    }
+
+    remindMe() {
+        return "Learning is a life-long pursuit"
     }
 
     exit() {
